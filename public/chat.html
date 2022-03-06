@@ -11,13 +11,13 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>ChitterChatter</title>
+    <title>ChitChat</title>
   </head>
   <body>
     <div class="chat-container">
       <header class="chat-header">
-        <h1><i class="fas fa-smile"></i> ChitterChatter</h1>
-        <a id="leave-btn" class="btn">Leave Room</a>
+        <h1><i class="fas fa-comment"></i> Chit Chat</h1>
+        <a id="leave-btn" class="btn" onclick="history.back()">Leave Room</a>
       </header>
       <main class="chat-main">
         <div class="chat-sidebar">
@@ -26,13 +26,7 @@
           <h3><i class="fas fa-users"></i> Users</h3>
           <ul id="users"></ul>
         </div>
-        <div class="chat-messages">
-          <div class="message">
-            <p class="meta">Adrian <span>9:51AM</span></p>
-            <p class="text">
-            </p>
-          </div>
-        </div>
+        <div class="chat-messages"></div>
       </main>
       <div class="chat-form-container">
         <form id="chat-form">
@@ -54,6 +48,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="/socket.io/socket.io.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>
